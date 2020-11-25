@@ -1,0 +1,27 @@
+{
+  "name": "todo-app-two",
+  "version": "1.0.0",
+  "description": "my super to do app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamcondon/todo-app-two.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamcondon/todo-app-two/issues"
+  },
+  "homepage": "https://github.com/liamcondon/todo-app-two#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
