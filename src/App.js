@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+import "./style.css";
 import TodoItem from "./TodoItem.js";
 
 const TodoItemsFromOutside = [
@@ -26,7 +27,7 @@ const App = () => {
   return (
     <div id="my-todo-app" className="my-todo-app">
       <h1>My to do app</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <input
           value={newTodo}
           onChange={(e) => {
@@ -34,7 +35,7 @@ const App = () => {
           }}
         />
       </form>
-      {TodoItemsFromOutside.map((item) => {
+      {todos.map((item) => {
         return (
           <TodoItem key={item.id} id={item.id} labelName={item.labelName} />
         );
@@ -42,4 +43,4 @@ const App = () => {
     </div>
   );
 };
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
